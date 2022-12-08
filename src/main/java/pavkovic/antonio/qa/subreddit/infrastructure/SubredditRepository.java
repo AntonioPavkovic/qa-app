@@ -1,4 +1,7 @@
 package pavkovic.antonio.qa.subreddit.infrastructure;
 
-public interface SubredditRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import pavkovic.antonio.qa.subreddit.domain.Subreddit;
+
+public interface SubredditRepository extends JpaRepository<Subreddit, Integer> {
 }
